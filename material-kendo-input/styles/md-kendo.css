@@ -1,0 +1,52 @@
+kendo-input-container{
+    display: inline-block;
+    height: 48px;
+    width: 100%;
+}
+kendo-input-container span.k-widget{
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    top:-5px;
+}
+kendo-input-container .k-widget .k-input{
+    border-bottom: none;
+    background-color: transparent !important;
+    position: relative;
+    line-height: 0px;
+    top: +8px;
+}
+kendo-input-container .k-widget.k-dropdown span.k-input{
+    line-height: 35px;
+}
+kendo-input-container .k-widget span.k-dropdown-wrap,
+kendo-input-container .k-widget span.k-picker-wrap{
+    border-radius: 0px;
+    border:none;
+    border-bottom: solid 1px lightgray;
+    background-color:transparent;
+    box-shadow: none !important;
+}
+kendo-input-container .k-widget span.k-select{
+    background-color: transparent;
+    border:none;
+}
+kendo-input-container label{
+    line-height: 0px;
+    display:block;
+    position: relative;
+    top: +30px;
+    z-index: 2;
+    color: darkgray;
+    left:2px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+kendo-input-container.k-container-has-value label,
+kendo-input-container.k-container-focus label{
+    top:+3px;
+}
+kendo-input-container.k-container-focus .k-widget span.k-dropdown-wrap,
+kendo-input-container.k-container-focus .k-widget span.k-picker-wrap{
+    border-bottom-width: 2px;
+}
